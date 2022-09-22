@@ -1,0 +1,158 @@
+/*Windows Resize (Softwere Support)*/
+@media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
+  }
+}
+
+/*Scroll Behavior = smooth*/
+html {
+    scroll-behavior: smooth;
+}
+
+/*Chrome Catagory*/
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/*ALL Catagory*/
+
+body{
+    background-image: url("Images/BG.png");
+    align-items: center;
+    text-align: center;
+    font-family: 'Roboto';
+    color: rgb(206, 206, 206);
+}
+
+/*Button (Link) Catagory*/
+
+.button{
+    background-image: linear-gradient(to right, blueviolet , rgb(0, 68, 255));
+    color: #222222;
+    border-radius: 10px;
+    display: inline-flex;
+    padding: 6px;
+    margin-top: 30px;
+    margin-right: 5%;
+    margin-left: 5%;
+    border: none;
+    font-family: 'Roboto';
+    font-size: 25px;
+    box-shadow: 10px 9px 5px rgba(17, 17, 17, 0.700);
+}
+
+.button:hover {
+    transition: 100ms;
+    background-image: linear-gradient(to right, rgb(0, 68, 255) , blueviolet);
+    font-size: 29px;
+    font-weight: 100;
+    margin-top: 29px;
+    color: black;
+    cursor: n-resize;;
+    box-shadow: 10px 9px 5px rgba(4, 4, 4, 0.705);
+}
+
+/*Home Catagory*/
+
+.home {
+    margin-top: 220px;
+}
+
+h1{
+    font-size: 50px;
+}
+
+
+.about {
+    margin-top: 1150px;
+    height: 500px;
+    font-style: italic;
+    font-size: 35px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/*Social Catagory*/
+
+.Social{
+    font-size: 25px;
+    align-items: center;
+    text-align: center;
+}
+
+.icon{
+    display: inline-block;
+    font-size: 25px;
+    animation: float 5s ease-in-out infinite;
+}
+
+.ri-you-tube{
+    animation-delay: 1s;
+}
+
+.ri-itch-io{
+    animation-delay: 2s;
+}
+
+.ri-sketch-fab{
+    animation-delay: 3s;
+}
+
+@keyframes float{
+    0%{
+        transform: translateY(0);
+    }
+
+    30%{
+        transform: translateY(-35px);
+    }
+
+    60%{
+        transform: translateY(0);
+    }
+}
+
+.circle {
+	position: relative;
+	width: 200px;
+	height: 200px;
+	border-radius: 100vmax;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.logo {
+	position: absolute;
+	width: 140px;
+	height: 140px;
+	background: url("Images/Logo.png");
+	background-size: cover;
+	border-radius: 100vmax;
+	background-position: center;
+}
+
+.text {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	font-family: consolas;
+	color: #fff;
+	text-shadow: 0 0 10px rgb(0, 109, 241);
+	font-size: 17px;
+	animation: textRotation 8s linear infinite;
+}
+
+@keyframes textRotation {
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.text span {
+	position: absolute;
+	left: 50%;
+	font-size: 1.2em;
+	transform-origin: 0 100px;
+}

@@ -1,0 +1,41 @@
+nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    background-image: linear-gradient(to right, rgb(37, 11, 124) , rgb(64, 0, 104));
+    border-radius: 10px;
+}
+
+.nav-links ul li a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+/*Animation*/
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-image: linear-gradient(to right,  rgb(0, 0, 0), rgba(0, 0, 0, 0.342), rgb(0, 0, 0));
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.Tab:hover{
+    background-image: linear-gradient(to right,  rgb(64, 0, 104), rgb(37, 11, 124));
+}
