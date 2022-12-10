@@ -156,3 +156,9 @@ h1{
 	font-size: 1.2em;
 	transform-origin: 0 100px;
 }
+
+.logo{
+  	position: -webkit-sticky; /* Safari */
+  	position: sticky;
+  	top: 0;
+}
